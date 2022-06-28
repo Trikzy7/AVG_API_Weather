@@ -1,7 +1,20 @@
+/*
+    FONT STYME
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+/*
+    FONT SIZE
+*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html, body {
+  font-size: 10px;
+  font-family: "Rubik", sans-serif;
 }
 
 body {
@@ -25,7 +38,6 @@ body .bg_image_blur {
   background-repeat: no-repeat;
   filter: blur(30px);
   -webkit-filter: blur(30px);
-  background-color: orange;
   z-index: -1;
 }
 body .main_container {
@@ -36,7 +48,20 @@ body .main_container {
   background-size: center;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0px 0px 20px 20px #b9b3b3;
+  box-shadow: 0px 0px 20px 2px #9b9a9a;
+  display: flex;
+  align-items: flex-end;
+}
+body .main_container .container_part_main_info {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+body .main_container .container_part_main_info .container_info_temp .info_temp {
+  font-size: 9rem;
 }
 
 /*# sourceMappingURL=style.css.map */
