@@ -1,0 +1,3 @@
+@function media-rem($rem) {
+    @return $rem * $font-size; // $rem must be unitless
+}

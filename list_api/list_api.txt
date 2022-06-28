@@ -1,0 +1,1 @@
+http://api.weatherstack.com/			cb1d3d6ededfaa9a2a071f317de88cc6
