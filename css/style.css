@@ -77,32 +77,53 @@ body .main_container .container_part_main_info .container_info_location .info_ci
   font-size: 3.5rem;
 }
 body .main_container .container_part_main_info .container_info_location .info_day {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 body .main_container .container_part_main_info .container_info_weather .info_weather_txt {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 body .main_container .container_part_details {
   width: 100%;
   height: 100%;
   position: absolute;
   right: -100%;
-  background: rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   transition: 0.5s;
+  padding: 8rem 3rem;
 }
 @media (min-width: 470px) {
   body .main_container .container_part_details {
     width: 80%;
     right: -80%;
+    padding: 5rem 4rem;
   }
 }
 @media (min-width: 1280px) {
   body .main_container .container_part_details {
     position: relative;
+    left: 0;
     width: 35%;
   }
+}
+body .main_container .container_part_details .container_weather_details {
+  width: 100%;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #e7e7e7;
+}
+body .main_container .container_part_details .container_weather_details .title_section {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+body .main_container .container_part_details .container_weather_details .container_line_info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+body .main_container .container_part_details .container_weather_details .container_line_info .info_type {
+  color: #e7e7e7;
 }
 body .main_container .container_toggle {
   width: 5rem;

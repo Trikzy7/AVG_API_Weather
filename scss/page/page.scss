@@ -102,22 +102,53 @@ body {
             position: absolute;
             right: -100%;
 
-            background: rgba( 0, 0, 0, 0.25 );
-            backdrop-filter: blur( 4px );
-            -webkit-backdrop-filter: blur( 4px );
+            background: rgba( 0, 0, 0, 0.32 );
+            backdrop-filter: blur( 20px );
+            -webkit-backdrop-filter: blur( 20px );
 
             transition: .5s;
+
+            padding: 8rem 3rem;
 
             @include theo_custom_47 {
                 width: 80%;
                 right: -80%;
+
+                padding: 5rem 4rem;
             }
 
             @include large {
                 position: relative;
-
+                left: 0;
                 width: 35%;
             }
+
+            .container_weather_details {
+                width: 100%;
+
+                padding-bottom: 2.5rem;
+                border-bottom: 1px solid #e7e7e7;
+
+
+                .title_section {
+                    font-size: $font-size-p-menu-sm;
+                    margin-bottom: 3rem;
+                }
+
+                .container_line_info {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    font-size: $font-size-p-menu-sm;
+
+                    .info_type {
+                        color: #e7e7e7;
+                    }
+                }
+            }
+
+
         }
 
         .container_toggle {

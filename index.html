@@ -14,16 +14,14 @@
 
     <div class="main_container">
 
-
-
         <div class="container_part_main_info">
 
             <div class="container_info_temp">
-                <p class="info_temp"></p>
+                <p class="info_temp">26°</p>
             </div>
 
             <div class="container_info_location">
-                <p class="info_city"></p>
+                <p class="info_city">Annecy</p>
                 <p class="info_day">06:09-Monday,9 Sep '19</p>
             </div>
 
@@ -35,7 +33,22 @@
         </div>
 
         <div class="container_part_details">
+            <div class="container_weather_details">
+                <p class="title_section">Weather Details</p>
 
+                <div class="container_line_info">
+                    <p class="info_type">Cloudy</p>
+                    <p class="info_value">86%</p>
+                </div>
+                <div class="container_line_info">
+                    <p class="info_type">Humidity</p>
+                    <p class="info_value">62%</p>
+                </div>
+                <div class="container_line_info">
+                    <p class="info_type">Wind</p>
+                    <p class="info_value">8km/h</p>
+                </div>
+            </div>
         </div>
 
         <div class="container_toggle">
@@ -46,6 +59,15 @@
 
     </div>
 
+
+    <script type="text/javascript" src="js/library/vanilla-tilt.js"></script>
+
+    <script>
+        VanillaTilt.init(document.querySelector(".main_container"), {
+            max: 5,
+            speed: 100
+        });
+    </script>
 
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
