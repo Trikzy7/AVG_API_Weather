@@ -25,3 +25,8 @@
   @mixin not-small-mobile{
     @media (min-width: media-rem(37.5)){@content}
   }
+
+
+@mixin theo_custom_47{
+  @media (min-width: media-rem(47)){@content}
+}
